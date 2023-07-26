@@ -1,0 +1,30 @@
+body{
+    background-color: #0d2326;
+}
+#task_input {
+    font-weight: bold;
+    border-radius: 0 0 0 0.375rem ;
+}
+
+#submit_button {
+    border-radius: 0 0 0.375rem 0;
+    background-color: #b3843d;
+    color:aliceblue;
+    border: 0;
+}
+#list_container {
+    background-color:#19444A;
+    max-width: 40%;
+    border-radius: 0.5rem;
+}
+
+#header {
+    background-color:#19444A;
+}
+
+#footer {
+    background-color:#19444A;
+}
+/* #7ea0d3
+#1b0b09
+#b3843d */
