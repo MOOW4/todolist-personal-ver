@@ -7,7 +7,9 @@
         <div class="px-4 py-4 my-5 text-center">
 
             <div class="container-md py-4" id="list_container">
-                <h1 class="display-5 fw-bold text-body-emphasis">Date</h1>
+                <h1 class="display-6 fw-bold text-body-emphasis">
+                    <%= todayDate%>
+                </h1>
 
                 <div class="d-flex flex-column flex-md-row p-4 gap-4 py-md-5 align-items-center justify-content-center">
 
@@ -15,24 +17,26 @@
                     <div class="list-group">
 
                         <!--TODO    Add new tasks here using EJS-->
-                        <div class="list-group-item d-flex gap-4 list-item">
+<!--                         <div class="list-group-item d-flex gap-4 list-item">
                             <input class="form-check-input flex-shrink-0 input-checkbox" type="checkbox">
                             <span>
                                 First checkbox
                             </span>
-                        </div>
-                        <div class="list-group-item d-flex gap-4 list-item">
-                            <input class="form-check-input flex-shrink-0 input-checkbox" type="checkbox">
-                            <span>
-                                Second checkbox
-                            </span>
-                        </div>
+                        </div>-->
 
+                            <% tasks.forEach((task) => { %>
+                                <div class="list-group-item d-flex gap-4 list-item">
+                                    <input class="form-check-input flex-shrink-0 input-checkbox" type="checkbox">
+                                    <span>
+                                        <%= task%>
+                                    </span>
+                                </div>
+                            <% }); %>
 
 
                         <form action="/" method="post" class="form-floating d-flex gap-0" >
-                            <input type="text" class="form-control" id="task_input">
-                            <button type="button" class="btn btn-dark" id="submit_button">Submit</button>
+                            <input type="text" class="form-control" id="task_input" name="taskText">
+                            <button type="submit" class="btn btn-dark" id="submit_button">Submit</button>
                         </form>
                     </div>
                 </div>
