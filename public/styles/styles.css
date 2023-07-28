@@ -28,6 +28,7 @@ body{
 #list_container {
     background-color:#E8D2C3;
     max-width: 40%;
+    min-width: 400px;
     border-radius: 4em;
 }
 
