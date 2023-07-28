@@ -8,7 +8,7 @@
 
             <div class="container-md py-4" id="list_container">
                 <h1 class="display-6 fw-bold text-body-emphasis">
-                    <%= todayDate%>
+                    <%= Title%>
                 </h1>
 
                 <div class="d-flex flex-column flex-md-row p-4 gap-4 py-md-5 align-items-center justify-content-center">
@@ -36,7 +36,7 @@
 
                         <form action="/" method="post" class="form-floating d-flex gap-0" >
                             <input type="text" class="form-control" id="task_input" name="taskText">
-                            <button type="submit" class="btn btn-dark" id="submit_button">Submit</button>
+                            <button type="submit" class="btn btn-dark" id="submit_button" name="submitButton" value="<%= Title%>">Submit</button>
                         </form>
                     </div>
                 </div>

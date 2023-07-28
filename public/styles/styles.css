@@ -74,8 +74,5 @@ footer > p{
 input:checked+span {
     text-decoration: line-through;
     text-decoration-color:#850E35;
+    text-decoration-thickness: 2px;
 }
-
-/* #7ea0d3
-#1b0b09
-#b3843d */
